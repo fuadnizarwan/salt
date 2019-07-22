@@ -1,0 +1,76 @@
+<div class="main-header">
+	<img class="header-logo" src="/img/salt_logo.png">
+	<div class="header-serch-wraper">
+		<input class="header-serch" placeholder="Find..." ng-model="glob.search">
+		<svg class="header-serch-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
+		<path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+			s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+			c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+			s-17-7.626-17-17S14.61,6,23.984,6z"/>
+		<g>
+		</svg>
+	</div>
+	<div class="upload-button">
+		<svg class="upload-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 349.757 349.756" style="enable-background:new 0 0 349.757 349.756;"
+			 xml:space="preserve">
+		<g>
+			<g>
+				<g>
+					<g>
+						<path d="M298.055,147.199c0,2.787-1.267,9.271-13.036,9.271h-54.037v178.856c0.072,0.48,0.144,1.159,0.144,1.939
+							c0,3.177-1.207,6.106-3.416,8.269c-2.858,2.798-7.224,4.222-12.988,4.222h-83.056c-11.493,0-14.525-8.149-14.525-12.454V160.236
+							H67.606c-13.841,0-15.904-6.594-15.904-10.521c0-6.293,5.996-12.577,7.197-13.775c3.176-4.305,89.036-118.195,101.529-130.718
+							c4.558-4.534,9.131-5.339,12.163-5.209c7.293,0.3,12.268,5.915,12.808,6.56l104.838,126.674
+							C291.75,134.631,298.055,141.068,298.055,147.199z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		</svg>
+		Upload
+	</div>
+	<div class="sign-in-button" ng-hide="isSignin" ng-click="signIn()">Sign in</div>
+	<div class="user-info" ng-show="isSignin" ng-click="signIn()">
+		<div class="prof-pic" style="background: url({{userInfo.profilPicture}});background-size: cover;background-position: center;"></div>
+		<div class="user-name">
+			<div>{{userInfo.firstname}}</div>
+			<div style="font-size: 12px;">{{userInfo.lastname}}</div>
+		</div>
+	</div>
+</div>
+<div class="nav">
+	<div class="nav-wrapper">
+		<div class="nav-selection">Videos</div><div class="nav-separate"> / </div>
+		<div class="nav-selection">People</div><div class="nav-separate"> / </div>
+		<div class="nav-selection">Documents</div><div class="nav-separate"> / </div>
+		<div class="nav-selection">Events</div><div class="nav-separate"> / </div>
+		<div class="nav-selection">Communities</div><div class="nav-separate"> / </div>
+		<div class="nav-selection">Favorites</div><div class="nav-separate"> / </div>
+		<div class="nav-selection">Channels</div>
+	</div>
+	<div class="header-serch-wraper">
+		<input class="header-serch" placeholder="Find...">
+		<svg class="header-serch-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
+		<path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+			s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+			c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+			s-17-7.626-17-17S14.61,6,23.984,6z"/>
+		<g>
+		</svg>
+	</div>
+	<div class="more-button">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+		<g>
+			<g id="menu">
+				<g>
+					<path d="M0,95.625v38.25h612v-38.25H0z M0,325.125h612v-38.25H0V325.125z M0,516.375h612v-38.25H0V516.375z"/>
+				</g>
+			</g>
+		</g>
+		</svg>
+	</div>
+</div>
